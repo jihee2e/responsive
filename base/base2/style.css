@@ -1,0 +1,35 @@
+@charset "UTF-8";
+*{margin: 0; padding: 0;}
+body{
+    background: #F4BFBF;
+}
+#wrap{ width: 1200px; margin: 0 auto;}
+header{ background: #F7D716 ; height: 150px;}
+aside{ 
+    background: #646FD4; height: 700px;
+    width: 400px; float: none;
+}
+section{ background: #FF8D29; height: 700px; width: 800px; float: left;}
+footer{ background: #BABD42; 
+    height: 150px; float: left; clear:both;
+    width: 100%;
+}
+
+/* 화면의 너비가 0 ~ 1200px */
+@media (max-width:1200px){
+    #wrap { width: 95%;}
+    aside{ width: 30%;}
+    section{width: 70%;}
+}
+
+/* 화면의 너비가 0 ~ 768px */
+@media (max-width:768px){
+    #wrap { width: 100%;}
+}
+
+/* 화면의 너비가 0 ~ 480px */
+@media (max-width:480px){
+    header{ height: 300px;}
+    aside{ height: 300px; width: 100%;}
+    section{ height: 300px; width: 100%;}
+}
